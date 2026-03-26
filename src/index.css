@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  background: linear-gradient(140deg, #f6f8fb 0%, #e6eaf3 100%);
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-content {
+  width: min(100%, 1080px);
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(24, 42, 77, 0.1);
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.app-header {
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
+  color: #0f172a;
+}
+
+.app-subtitle {
+  margin: 0.45rem 0 0;
+  color: #475569;
+  font-size: 0.98rem;
+}
+
+.section {
+  margin-bottom: 1.2rem;
+}
+
+.card {
+  background: #fafbff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+label,
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: #334155;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  padding: 0.62rem 0.68rem;
+  margin-top: 0.35rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+button {
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 7px;
+  padding: 0.66rem 0.95rem;
+  margin-right: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.13s ease, background-color 0.18s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.video-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  background: #000;
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+}
+
+.status-success {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.alert-error,
+.alert-warning {
+  padding: 0.55rem 0.72rem;
+  border-radius: 7px;
+  margin: 0.25rem 0;
+  font-size: 0.88rem;
+}
+
+.alert-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.alert-warning {
+  background: #fef08a;
+  color: #92400e;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    padding: 1rem;
+  }
+
+  .video-wrapper {
+    max-height: 280px;
+  }
+}
+
